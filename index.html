@@ -21,8 +21,7 @@
 </head>
 <body>
     <div class="container">
-                <h1>Akif Feyzioğlu</h1>
-                <p>I'm learning HTML, CSS, JavaScript, Go and Docker</p>
+                <p id="txt"></p>
         <div class="social-media">
             <a href="https://github.com/akiffeyzioglu" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/akiffeyzioglu" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -32,5 +31,30 @@
             <a href="https://codepen.io/akiffeyzioglu" target="_blank"><i class="fab fa-codepen"></i></a>
         </div>
     </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById("txt");
+        var text = new Typewriter(app,{
+            loop:true
+        });
+
+        text.typeString("Welcome to my site")
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString("I'm Akif Feyzioğlu")
+        .pauseFor(750)
+        .typeString("<br>I'm learning HTML")
+        .pauseFor(750)
+        .deleteChars(4)
+        .typeString("CSS")
+        .pauseFor(750)
+        .deleteChars(3)
+        .typeString("Javascript")
+        .pauseFor(750)
+        .deleteChars(10)
+        .typeString("Go & docker")
+        .pauseFor(1500)
+        .start();
+    </script>
 </body>
 </html>
