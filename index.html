@@ -31,11 +31,14 @@
             <a href="https://codepen.io/akiffeyzioglu" target="_blank"><i class="fab fa-codepen"></i></a>
         </div>
     </div>
+    
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script>
+
         var app = document.getElementById("txt");
         var text = new Typewriter(app,{
-            loop:true
+            loop:true, 
+            cursor: ""
         });
 
         text.typeString("Welcome to my site")
@@ -43,17 +46,10 @@
         .deleteAll()
         .typeString("I'm Akif Feyzioğlu")
         .pauseFor(750)
-        .typeString("<br>I'm learning HTML")
-        .pauseFor(750)
-        .deleteChars(4)
-        .typeString("CSS")
-        .pauseFor(750)
-        .deleteChars(3)
-        .typeString("Javascript")
-        .pauseFor(750)
-        .deleteChars(10)
-        .typeString("Go & Docker")
-        .pauseFor(1500)
+        .typeString("<br>I'm learning HTML, CSS, JavaScript, Go and Docker")
+        .pauseFor(10000)
+        .start()
+        
     </script>
 </body>
 </html>
